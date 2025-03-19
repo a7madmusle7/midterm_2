@@ -1,7 +1,9 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red46\green111\blue253;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c22750\c53231\c99501;\cssrgb\c0\c0\c0;}
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red46\green111\blue253;\red0\green0\blue0;\red24\green25\blue26;
+\red255\green255\blue255;\red24\green25\blue26;}
+{\*\expandedcolortbl;;\cssrgb\c22750\c53231\c99501;\cssrgb\c0\c0\c0;\cssrgb\c12549\c12941\c13333;
+\cssrgb\c100000\c100000\c100000;\cssrgb\c12549\c12941\c13333;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
 {\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
 {\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid202\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid3}
@@ -26,6 +28,7 @@ II.	Goals: Minimum features, desired features, and stretch goal features\
 III.	Diagrams\
 \
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf3 I.	What is the watering system?\
 \
 \pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
@@ -34,10 +37,8 @@ III.	Diagrams\
 \cf3 \
 \
 II.	Goals: Minimum features, desired features, and stretch goal features\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf3 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf3 Minimum\
+\
+Minimum\
 \pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
 \ls2\ilvl0\cf3 {\listtext	\uc0\u8226 	}Emitter follower + relay, sensors: BME + soil moisture + air quality + dust, SSD13006 OLED display, water pump and tubing. Everything connected to the Photon 2.\
 {\listtext	\uc0\u8226 	}Adafruit.io: periodically publish the sensor readings to a dashboard.\
@@ -67,12 +68,51 @@ Stretch\
 \
 III.	Diagrams\
 \
-I'm working on it, gosh\
 \
-\
-	-	Plant -	-	-	-	-	sensors	-	-	OLED\
-	|	|\
-	|	barrier, like a wooden sheet\
-	|					|\
-	-	water pump	-	-	water resevoir	-	water level sensor\
+	
+\f1\b\fs32 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8594 	
+\f0\b0\fs24 \cf3 \cb1 \kerning1\expnd0\expndtw0 Plant		
+\f1\b\fs32 \cf6 \cb5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 \uc0\u8592 \u8594 		
+\f0\b0\fs24 \cf3 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 sensors	
+\f1\b\fs32 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8592 \u8594 		
+\f0\b0\fs24 \cf3 \cb1 \kerning1\expnd0\expndtw0 OLED\
+
+\fs32 \cf6 \cb5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 	\cf4 \cb5 \outl0\strokewidth0 \uc0\u8593 	\cf6 \cb5 \outl0\strokewidth0 \strokec6 |\
+
+\f1\b \cf6 \cb5 \strokec6 	
+\f0\b0 \cf4 \cb5 \outl0\strokewidth0 \uc0\u8593 
+\f1\b \cf4 	\cf6 \cb5 \outl0\strokewidth0 \strokec6 |
+\f0\b0\fs24 \cf3 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+	
+\fs32 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8593 
+\fs24 \cf3 \cb1 \kerning1\expnd0\expndtw0 	barrier, flat wooden sheet\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs32 \cf4 \cb5 \expnd0\expndtw0\kerning0
+	\cf4 \uc0\u8593 \cf4 	|\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b \cf4 	
+\f0\b0 \cf4 \uc0\u8593 	
+\f1\b \cf4 |
+\f0\b0\fs24 \cf3 \cb1 \kerning1\expnd0\expndtw0 \
+	
+\fs32 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8593 	|
+\fs24 \cf3 \cb1 \kerning1\expnd0\expndtw0 \
+	
+\f1\b\fs32 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8592 	
+\f0\b0\fs24 \cf3 \cb1 \kerning1\expnd0\expndtw0 water pump	
+\f1\b\fs32 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8592 \u8594 		
+\f0\b0\fs24 \cf3 \cb1 \kerning1\expnd0\expndtw0 water reservoir	
+\f1\b\fs32 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\uc0\u8592 \u8594 		
+\f0\b0\fs24 \cf3 \cb1 \kerning1\expnd0\expndtw0 water level sensor\
 }

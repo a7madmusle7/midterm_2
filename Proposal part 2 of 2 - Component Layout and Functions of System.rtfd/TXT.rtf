@@ -1,0 +1,78 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red46\green111\blue253;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c22750\c53231\c99501;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid202\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 by Ahmad Musleh		https://github.com/a7madmusle7\
+\
+Midterm 2			Smart House Watering System\
+\
+				Project repository: https://github.com/a7madmusle7/midterm_2\
+\
+				Presented on 2025-March-24\
+\
+\
+Contents\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 I.	What is the watering system?\
+II.	Goals: Minimum features, desired features, and stretch goal features\
+III.	Diagrams\
+\
+\
+\cf3 I.	What is the watering system?\
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf3 {\listtext	\uc0\u8226 	}A single small indoor plant is connected to a automatic watering system: a water pump, a water reservoir, a system controller (Particle Photon 2), and a sensor for soil moisture and another for air quality.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf3 \
+\
+II.	Goals: Minimum features, desired features, and stretch goal features\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf3 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf3 Minimum\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf3 {\listtext	\uc0\u8226 	}Emitter follower + relay, sensors: BME + soil moisture + air quality + dust, SSD13006 OLED display, water pump and tubing. Everything connected to the Photon 2.\
+{\listtext	\uc0\u8226 	}Adafruit.io: periodically publish the sensor readings to a dashboard.\
+{\listtext	\uc0\u8226 	}Adafruit.io: a button in a dashboard that allows me to manually turn on the water pump.\
+{\listtext	\uc0\u8226 	}The water pump turns on for half a second at a time, based on things like sensor readings.\
+{\listtext	\uc0\u8226 	}Sensor readings are shown on the OLED display.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf3 \
+Desired\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls3\ilvl0\cf3 {\listtext	\uc0\u8226 	}IFTTT / Zapier: I get a text or email notification if any of my sensors go out of a designate range.\
+{\listtext	\uc0\u8226 	}There are 3 LEDS in a traffic light arrangement to show the soil moisture.\
+{\listtext	\uc0\u8226 	}The water reservoir is a container that the flower pot sites in and just looks like a decoration. The water is discreetly hidden.\
+{\listtext	\uc0\u8226 	}Accessibility features:\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls3\ilvl1\cf3 {\listtext	\uc0\u8259 	}3D-printed braille labels.\
+{\listtext	\uc0\u8259 	}Layout is non-cluttered. The audience can easily reach the plant and see the components and how everything connects.\
+{\listtext	\uc0\u8259 	}Large, clear font labels and pictograms.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf3 \
+Stretch\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls4\ilvl0\cf3 {\listtext	\uc0\u8226 	}A 3-button survey panel, either in traffic light colors or smiley faces. It asks the audience about the plant health. The results are published to the Adafruit dashboard.\
+{\listtext	\uc0\u8226 	}I want to demonstrate effective use of code tools like libraries, because I want to work smarter.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf3 \
+\
+III.	Diagrams\
+\
+I'm working on it, gosh\
+\
+\
+	-	Plant -	-	-	-	-	sensors	-	-	OLED\
+	|	|\
+	|	barrier, like a wooden sheet\
+	|					|\
+	-	water pump	-	-	water resevoir	-	water level sensor\
+}
